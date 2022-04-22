@@ -2,19 +2,7 @@ import React from 'react';
 import Card from './shared/Card';
 import { FaTimes } from 'react-icons/fa';
 
-
-interface IItemProps { 
-    key: number,
-    item: {
-        id: number,
-        rating: number,
-        text: string,
-    },
-    handleDelete: (id: number) => void
-    
-};
-
-function FeedbackItem({item, handleDelete }: IItemProps) {
+function FeedbackItem({item, handleDelete }: IFeedbackItemProps) {
 
     return (
         <Card>

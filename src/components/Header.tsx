@@ -1,9 +1,7 @@
 import React from 'react'
 
-type HeaderProps = { text: string, bgColor: string, textColor: string };
 
-
-function Header({ text, bgColor, textColor } : HeaderProps) {
+function Header({ text, bgColor, textColor } : IHeaderProps) {
 
     const headerStyles = {
         backgroundColor : bgColor,
