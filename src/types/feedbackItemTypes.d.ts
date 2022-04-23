@@ -1,10 +1,10 @@
-interface IFeedbackItemProps { 
+declare interface IFeedbackItemProps { 
     key: number,
     item: IFeedback,
     handleDelete: (id: number) => void,
 };
 
-interface IFeedback {
+declare interface IFeedback {
     id: number,
     rating: number,
     text: string,

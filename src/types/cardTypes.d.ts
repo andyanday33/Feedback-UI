@@ -1,3 +1,3 @@
-interface ICardProps {
+declare interface ICardProps {
     children: React.ReactNode,
 }

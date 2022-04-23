@@ -1,2 +1,2 @@
-interface IHeaderProps { text: string, bgColor: string, textColor: string };
+declare interface IHeaderProps { text: string, bgColor: string, textColor: string };
 

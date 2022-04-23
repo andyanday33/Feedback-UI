@@ -1,3 +1,3 @@
-interface IFeedbackStatsProps {
+declare interface IFeedbackStatsProps {
     feedback: IFeedback[]
 }
