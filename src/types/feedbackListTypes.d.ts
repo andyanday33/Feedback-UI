@@ -1,4 +1,4 @@
 declare interface IFeedbackListProps { 
     feedback : IFeedback[],
-    handleDelete: (id: number) => void,  
+    handleDelete: (id: number | string) => void,  
 };

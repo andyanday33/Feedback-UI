@@ -12,13 +12,12 @@ function RatingSelect({select}: IRatingSelectProps) {
 
     for(let i = 1; i < 11; i++) {
         ratings.push(
-            <li>
+            <li key={`rating-${i}`}>
                 <input 
                     type="radio"
                     id={`num${i}`}
                     name="rating"
                     value={`${i}`}
-                    key={`rating-${i}`}
                     onChange= {handleChange}
                     checked={selected === i} />
                 <label htmlFor={`num${i}`}>{i}</label>
