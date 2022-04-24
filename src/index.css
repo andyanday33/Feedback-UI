@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+:root {
+  --dark-blue: #36506C;
+  --white: #EBF7FD;
+  --darker-blue: #233142;
+  --blue: #A5DEF1;
+  --yellow: #ECB365;
+}
+
 
 * {
   box-sizing: border-box;
@@ -8,8 +16,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #202142;
-  color: #fff;
+  background-color: var(--darker-blue);
+  color: var(--white);
   line-height: 1.6;
 }
 
@@ -33,8 +41,8 @@ header {
 }
 
 .card {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--white);
+  color: var(--darker-blue);
   border-radius: 15px;
   padding: 40px 50px;
   margin: 20px 0;
@@ -42,8 +50,8 @@ header {
 }
 
 .card.reverse {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #fff;
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 
 .card h2 {
@@ -62,14 +70,15 @@ header {
 .rating li,
 .num-display {
   position: relative;
-  background: #f4f4f4;
+  background: var(--dark-blue);
+  color: var(--white);
   width: 50px;
   height: 50px;
   padding: 10px;
   text-align: center;
   border-radius: 50%;
   font-size: 19px;
-  border: 1px #eee solid;
+  border: 1px var(--white) solid;
   transition: 0.3s;
 }
 
@@ -87,8 +96,8 @@ header {
 
 .rating li:hover,
 .num-display {
-  background: #ff6a95;
-  color: #fff;
+  background: var(--yellow);
+  color: var(--darker-blue);
 }
 
 [type='radio'] {
@@ -96,14 +105,14 @@ header {
 }
 
 [type='radio']:checked ~ label {
-  background: #ff6a95;
-  color: #fff;
+  background: var(--yellow);
+  color: var(--darker-blue);
 }
 
 .input-group {
   display: flex;
   flex-direction: row;
-  border: 1px solid #ccc;
+  border: 1px solid var(--dark-blue);
   padding: 8px 10px;
   border-radius: 8px;
 }
@@ -119,7 +128,7 @@ input:focus {
 }
 
 .feedback-stats {
-  color: #fff;
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,21 +155,21 @@ input:focus {
 }
 
 .btn {
-  color: #fff;
+  color: var(--white);
   border: 0;
   border-radius: 8px;
-  color: #fff;
   width: 100px;
   height: 40px;
   cursor: pointer;
 }
 
 .btn-primary {
-  background-color: #202142;
+  background-color: var(--yellow);
+  color: var(--darker-blue);
 }
 
 .btn-secondary {
-  background: #ff6a95;
+  background: var(--yellow);
 }
 
 .btn:hover {
@@ -170,7 +179,7 @@ input:focus {
 
 .btn:disabled {
   background-color: #cccccc;
-  color: #333;
+  color: var(--darker-blue);
   cursor: auto;
 }
 
@@ -182,7 +191,7 @@ input:focus {
 .message {
   padding-top: 10px;
   text-align: center;
-  color: rebeccapurple;
+  color: var(--dark-blue);
 }
 
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
@@ -195,12 +204,12 @@ input:focus {
 /* FIX: Remove position: absolute to keep about icon at the bottom of the
  * document */
 .about-link a {
-  color: #fff;
+  color: var(--darker-blue);
   cursor: pointer;
 }
 
 .about-link a:hover {
-  color: #ff6a95;
+  color: var(--yellow);
 }
 
 .about h1 {
@@ -209,6 +218,11 @@ input:focus {
 
 .about p {
   margin: 10px 0;
+}
+
+/* Some texts explaining a functionality provided by a button for screen readers */
+.screen-reader-text {
+  visibility: hidden;
 }
 
 @media (max-width: 600px) {
